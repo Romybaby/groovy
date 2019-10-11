@@ -1,3 +1,3 @@
-function alert(){
-    window.alert("h");
+function beans(){
+    alert("this is an alert I made");
 }
