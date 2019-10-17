@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <title>Roman's Website</title>
+    <id>Roman's Website</id>
     
 </head>
 <body>
-<p>
+<p id="1">
 hello, this is my webpage. i'm not here to write an essay so here's an image
 </p>
 <img src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="image">
-<p>
+<p id="2">
 neat image, huh <br> i also made this watermelon using css
 </p>
 <a href="https://romybaby.github.io/watermelon.html">go to watermelon</a>
-<p>
+<p id="3">
 it somewhat resembles a watermelon <br> good enough for me, i have low standards
 </p>
 <button onclick="aalert()">click me</button>
@@ -30,7 +30,7 @@ h1 {
 <h1>
 look, bold red text
 </h1>
-<p>
+<p id="4">
 heres some theme changing buttons
 </p>
 <button onclick="night()">night mode</button>
@@ -54,7 +54,21 @@ heres some theme changing buttons
         document.body.style.color = "yellow";
     }
 </script>
-<p>
+<p id="5">
+this is a font changing button    
+</p>
+<button onclick="fancy()">fancy mode</button>
+<script>
+	function fancy(){
+        document.getElementById("1").style.fontFamily = "Garamond";
+        document.getElementById("2").style.fontFamily = "Garamond";
+        document.getElementById("3").style.fontFamily = "Garamond";
+        document.getElementById("4").style.fontFamily = "Garamond";
+        document.getElementById("5").style.fontFamily = "Garamond";
+        document.getElementById("6").style.fontFamily = "Garamond";
+    }
+</script>
+<p id="6">
 this is my resume, i haven't achieved much
 </p>
 <iframe src="https://resume.creddle.io/embed/aqb8zhlxyyu"
