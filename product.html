@@ -19,13 +19,23 @@ Ever get tired of hearing other people talk? Want to just hear a constant, deafe
 The critics are RAVING!    
 </h2>
 <p id="review" style="position: relative; top: 40px; padding-left: 0px; font-size: 1.5em">
-  "Really wiggled my eardrums"  
+  Really wiggled my eardrums  
 </p>
 <button style="position: relative; top: 40px" onclick="forward()">Next Review</button>
 <script>
-var pos = 0;
+var rand = Math.floor(Math.random() * 10);
 	function forward(){
-		pos += 40;			document.getElementById("review").innerHTML = "Oh god my ears";
+		rand = Math.floor(Math.random() * 10);
+		if (rand = 0){ 												document.getElementById("review").innerHTML = "Oh 			god my ears";}
+        if (rand = 1){ 												document.getElementById("review").innerHTML = "Can no longer hear, exactly as advertised. 5 stars.";}
+		if (rand = 2){ 												document.getElementById("review").innerHTML = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";}
+		if (rand = 3){ 												document.getElementById("review").innerHTML = "Really wiggled my eardrums";}
+		if (rand = 4){ 												document.getElementById("review").innerHTML = "My eyes are leaking blood, is this normal?";}
+		if (rand = 5){ 												document.getElementById("review").innerHTML = "The noise has burst my eardrums";}
+		if (rand = 6){ 												document.getElementById("review").innerHTML = "Great torture method, 10/10";}
+		if (rand = 7){ 												document.getElementById("review").innerHTML = "I am now deaf";}
+		if (rand = 8){ 												document.getElementById("review").innerHTML = "Why would anyone buy these";}
+		if (rand = 9){ 												document.getElementById("review").innerHTML = "these are not airpods, i am now in the hospital";}
     }
 </script>    
 
